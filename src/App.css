@@ -1,0 +1,66 @@
+body {
+	background: #141414;
+	color: #ffffff;
+}
+
+.movie-app > .row {
+	overflow-x: auto;
+	flex-wrap: nowrap;
+}
+
+.image-container {
+	position: relative;
+	transition: transform 0.2s;
+}
+
+.image-container:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.image-container:hover .overlay {
+	opacity: 1;
+}
+
+.overlay {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	transition: 0.5s ease;
+	opacity: 0;
+	bottom: 0;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+}
+
+.login-form {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: montserrat, sans-serif;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #ffffff;
+	color: #141414;
+}
+
+input {
+	appearance: none;
+	background: none;
+	outline: none;
+	display: inline-block;
+}
+button {
+	appearance: none;
+	background: none;
+	border: none;
+	outline: none;
+	display: inline-block;
+	padding: 10px 15px;
+	border-radius: 8px;
+	color: #ffffff;
+	background-color: #3B5998;
+}
